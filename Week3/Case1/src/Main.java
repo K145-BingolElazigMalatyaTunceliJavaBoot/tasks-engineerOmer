@@ -17,16 +17,19 @@ public class Main {
     public static void main(String[] args) {
 
         Apple apple = new Apple(30);
-        AppleService appleService = new AppleManager(new AppleRoom(), apple);
+        AppleService appleService = new AppleManager(apple);
         appleService.buy(5);
         appleService.buy(5);
-        appleService.add(50);
+        appleService.add(new Apple(10));
+        appleService.buy(15);
+        //appleService.add(50);
+        /*
         appleService.buy(5);
-        appleService.buy(100);
+        appleService.buy(100);*/
         System.out.println(apple.getUnitsInStock());
 
 
-
+        System.out.println("******************************************");
         Cherry cherry = new Cherry(40);
         CherryService cherryService = new CherryManager(new CherryRoom(),cherry);
         cherryService.buy(5);
@@ -35,13 +38,13 @@ public class Main {
         cherryService.buy(42);
         System.out.println(cherry.getUnitsInStock());
 
-
+/*
         Pear pear = new Pear(30);
         PearService pearService = new PearManager(new PearRoom(),pear);
         pearService.buy(35);
         pearService.add(25);
         pearService.buy(27.5);
-        System.out.println(pear.getUnitsInStock());
+        System.out.println(pear.getUnitsInStock());*/
 
 
 

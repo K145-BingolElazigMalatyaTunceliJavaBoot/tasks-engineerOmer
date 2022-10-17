@@ -7,7 +7,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AppleRoom {
-    List<Apple> listApple = new ArrayList<>();
+    List<Apple> listApple ;
+
+    public AppleRoom() {
+        this.listApple=new ArrayList<>();
+    }
 
     public Apple add(Apple apple){
         this.listApple.add(apple);
