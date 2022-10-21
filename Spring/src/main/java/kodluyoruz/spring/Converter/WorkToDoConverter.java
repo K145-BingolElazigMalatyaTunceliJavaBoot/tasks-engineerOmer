@@ -3,6 +3,7 @@ package kodluyoruz.spring.Converter;
 import kodluyoruz.spring.Entity.WorkToDo;
 import kodluyoruz.spring.RequestDto.AddToDo;
 import kodluyoruz.spring.RequestDto.DeleteToDo;
+import kodluyoruz.spring.RequestDto.UpdateToDo;
 import kodluyoruz.spring.ResponseDto.WorkToDoResponseDto;
 import org.springframework.stereotype.Component;
 
@@ -49,5 +50,11 @@ public class WorkToDoConverter {
             workToDoResponseDto.setDay(workToDo.getDay());
         }
         return workToDoResponseDtoListDays;
+    }
+
+    public WorkToDo updateMission(UpdateToDo updateToDo){
+        WorkToDo workToDo = new WorkToDo();
+        workToDo.setDone(updateToDo.isDone());
+        return workToDo;
     }
 }

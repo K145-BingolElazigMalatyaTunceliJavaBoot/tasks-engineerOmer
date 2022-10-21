@@ -3,7 +3,7 @@ package kodluyoruz.spring.ResponseDto;
 public class WorkToDoResponseDto {
     private int id;
 
-    private String mission;
+    private String   mission;
 
     private String day;
 

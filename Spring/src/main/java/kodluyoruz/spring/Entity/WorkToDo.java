@@ -19,13 +19,14 @@ public class WorkToDo {
     private int id;
 
     @Column(name = "mission")
-    private String mission;
+    private String  mission;
 
     @Column(name = "day")
     private String day;
 
     @Column(name = "done")
     private boolean done;
+
 
 
 

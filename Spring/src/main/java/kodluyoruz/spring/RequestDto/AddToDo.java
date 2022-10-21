@@ -9,7 +9,7 @@ public class AddToDo {
 
     private String mission;
 
-    private String day;
+    private String  day;
 
     private boolean done;
 
