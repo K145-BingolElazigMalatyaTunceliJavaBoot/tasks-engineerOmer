@@ -1,5 +1,8 @@
 package kodluyoruz.spring.ResponseDto;
 
+import lombok.Data;
+
+@Data
 public class WorkToDoResponseDto {
     private int id;
 
@@ -7,29 +10,7 @@ public class WorkToDoResponseDto {
 
     private String day;
 
-    public int getId() {
-        return id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getMission() {
-        return mission;
-    }
-
-    public void setMission(String mission) {
-        this.mission = mission;
-    }
-
-    public String getDay() {
-        return day;
-    }
-
-    public void setDay(String day) {
-        this.day = day;
-    }
 
 
 }

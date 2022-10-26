@@ -1,6 +1,6 @@
 package kodluyoruz.spring.RequestDto;
 
-public class DeleteToDo {
+public class DeleteToDoRequestDto {
 
     private int id;
 

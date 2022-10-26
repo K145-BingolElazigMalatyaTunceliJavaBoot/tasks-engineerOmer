@@ -4,7 +4,7 @@ package kodluyoruz.spring.RequestDto;
 import lombok.Data;
 
 @Data
-public class AddToDo {
+public class AddToDoRequestDto {
     private int id;
 
     private String mission;
