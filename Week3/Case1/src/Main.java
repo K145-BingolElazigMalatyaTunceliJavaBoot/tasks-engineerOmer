@@ -22,6 +22,7 @@ public class Main {
         appleService.buy(5);
         appleService.add(new Apple(10));
         appleService.buy(15);
+        System.out.println();
         //appleService.add(50);
         /*
         appleService.buy(5);
